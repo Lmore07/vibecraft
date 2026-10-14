@@ -1,0 +1,97 @@
+---
+// Hero.astro
+---
+
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-mesh-pattern">
+  <!-- Glowing background orbs -->
+  <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#6366F1]/20 via-[#F43F5E]/15 to-transparent blur-[100px] pointer-events-none -z-10 rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-4xl mx-auto space-y-6">
+      
+      <!-- Top Pill Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/80 border border-[#E0E7FF] shadow-sm backdrop-blur-md">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6366F1] opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#6366F1]"></span>
+        </span>
+        <span class="text-xs font-bold text-[#4F46E5] tracking-wide uppercase">VibeCraft Software Studio</span>
+        <span class="text-xs text-[#94A3B8]">•</span>
+        <span class="text-xs font-semibold text-[#64748B]">Creadores de DuoLedger</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#0F172A] tracking-tight leading-[1.1] font-['Plus_Jakarta_Sans']">
+        Creamos software móvil con <span class="text-gradient-primary">alma, diseño</span> y tiempo real.
+      </h1>
+
+      <!-- Description Subtitle -->
+      <p class="text-lg sm:text-xl text-[#475569] max-w-2xl mx-auto font-normal leading-relaxed">
+        Somos un estudio boutique de ingeniería de software. Diseñamos y construimos productos digitales de clase mundial con 
+        <strong class="text-[#0F172A] font-semibold"> Flutter, NestJS y PostgreSQL</strong>. Creadores de soluciones que combinan belleza estética y robustez técnica.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="#duoledger"
+          class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#6366F1] hover:bg-[#4F46E5] text-white font-bold text-base shadow-lg shadow-[#6366F1]/30 hover:shadow-xl hover:shadow-[#6366F1]/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3"
+        >
+          <img src="/icons/icono_duoledger.png" alt="DuoLedger Icon" class="w-6 h-6 rounded-lg object-contain bg-white/20 p-0.5" />
+          <span>Ver DuoLedger en Acción</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+
+        <a
+          href="#suite"
+          class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-[#F8FAFC] text-[#1E293B] font-bold text-base border border-[#E2E8F0] shadow-sm hover:border-[#CBD5E1] transition-all duration-300 flex items-center justify-center gap-2"
+        >
+          <span>Conoce Nuestra Suite</span>
+          <svg class="w-4 h-4 text-[#64748B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Feature Pill Highlights -->
+      <div class="pt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto text-left">
+        
+        <div class="p-4 rounded-2xl bg-white/90 border border-[#F1F5F9] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-[#EEF2FF] text-[#6366F1] flex items-center justify-center mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <p class="text-xs font-bold text-[#0F172A]">Tiempo Real</p>
+          <p class="text-[11px] text-[#64748B]">WebSockets & Socket.io</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/90 border border-[#F1F5F9] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-[#FFE4E6] text-[#F43F5E] flex items-center justify-center mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <p class="text-xs font-bold text-[#0F172A]">Diseño Exquisito</p>
+          <p class="text-[11px] text-[#64748B]">Bordes 24px & Háptica</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/90 border border-[#F1F5F9] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-[#ECFDF5] text-[#10B981] flex items-center justify-center mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <p class="text-xs font-bold text-[#0F172A]">Infraestructura</p>
+          <p class="text-[11px] text-[#64748B]">Postgres & VaultS3</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/90 border border-[#F1F5F9] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-[#FFF7ED] text-[#F97316] flex items-center justify-center mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <p class="text-xs font-bold text-[#0F172A]">Multiplataforma</p>
+          <p class="text-[11px] text-[#64748B]">Flutter iOS & Android</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

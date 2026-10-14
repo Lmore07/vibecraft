@@ -1,0 +1,101 @@
+---
+// ContactSection.astro
+---
+
+<section id="contact" class="py-24 bg-white relative border-t border-[#F1F5F9]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="max-w-4xl mx-auto bg-gradient-to-tr from-[#0F172A] to-[#1E293B] rounded-[36px] p-8 sm:p-14 text-white shadow-2xl shadow-[#6366F1]/10 relative overflow-hidden">
+      
+      <!-- Ambient light effect -->
+      <div class="absolute top-0 right-0 w-80 h-80 bg-[#6366F1]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
+        
+        <!-- Left info -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#818CF8] text-xs font-bold uppercase tracking-wider">
+            <span>👋 Contáctanos</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-['Plus_Jakarta_Sans'] leading-tight">
+            ¿Listo para construir algo extraordinario?
+          </h2>
+
+          <p class="text-sm sm:text-base text-[#94A3B8] leading-relaxed">
+            Ya sea que quieras probar la beta privada de <strong class="text-white font-semibold">DuoLedger</strong> o necesites un equipo de ingeniería para hacer realidad tu próxima aplicación móvil, conversemos.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <a
+              href="https://wa.me/?text=Hola%20equipo%20de%20VibeCraft,%20quiero%20conversar%20sobre%20un%20proyecto."
+              target="_blank"
+              class="inline-flex items-center gap-3 text-sm font-semibold text-white hover:text-[#818CF8] transition-colors"
+            >
+              <div class="w-9 h-9 rounded-xl bg-[#10B981]/20 text-[#34D399] flex items-center justify-center font-bold text-base">
+                💬
+              </div>
+              <span>Atención Rápida por WhatsApp</span>
+            </a>
+
+            <div class="flex items-center gap-3 text-sm text-[#94A3B8]">
+              <div class="w-9 h-9 rounded-xl bg-white/10 text-white flex items-center justify-center font-bold text-base">
+                ⚡
+              </div>
+              <span>Respuesta en menos de 24 horas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Quick Action / Card -->
+        <div class="bg-white/5 p-6 sm:p-8 rounded-3xl border border-white/10 backdrop-blur-md space-y-4">
+          <h3 class="text-lg font-bold text-white font-['Plus_Jakarta_Sans']">Envíanos un Mensaje</h3>
+          
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo a la brevedad.');">
+            <div>
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Tu Nombre</label>
+              <input
+                type="text"
+                required
+                placeholder="Ej. Alexander"
+                class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#6366F1] transition-all"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Correo Electrónico</label>
+              <input
+                type="email"
+                required
+                placeholder="alex@ejemplo.com"
+                class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#6366F1] transition-all"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Tipo de Interés</label>
+              <select
+                class="w-full px-4 py-3 rounded-xl bg-[#1E293B] border border-white/15 text-white text-sm focus:outline-none focus:border-[#6366F1] transition-all"
+              >
+                <option value="duoledger">Probar DuoLedger (Beta)</option>
+                <option value="custom_app">Desarrollo de App a Medida</option>
+                <option value="quotecraft">Interés en QuoteCraft</option>
+                <option value="other">Otro asunto</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#F43F5E] text-white font-bold text-sm shadow-lg shadow-[#6366F1]/30 hover:opacity-95 transition-opacity"
+            >
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,149 @@
+---
+// ProductSuite.astro
+---
+
+<section id="suite" class="py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+      <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#F1F5F9] text-[#475569]">
+        Nuestro Ecosistema
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#0F172A] tracking-tight font-['Plus_Jakarta_Sans']">
+        La Suite de Productos Digitales de VibeCraft
+      </h2>
+      <p class="text-base sm:text-lg text-[#64748B]">
+        No hacemos apps genéricas. Cada producto está meticulosamente diseñado para resolver un dolor cotidiano con velocidad extrema, UX deleitable y arquitectura sólida.
+      </p>
+    </div>
+
+    <!-- Product Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Card 1: DuoLedger (Featured) -->
+      <div class="glass-card rounded-3xl p-8 border-2 border-[#6366F1]/30 hover:border-[#6366F1] transition-all relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-[#6366F1]/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+        
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <img src="/icons/icono_duoledger.png" alt="DuoLedger" class="w-12 h-12 rounded-2xl shadow-sm object-contain" />
+            <div>
+              <h3 class="text-xl font-extrabold text-[#0F172A] font-['Plus_Jakarta_Sans']">DuoLedger</h3>
+              <p class="text-xs text-[#6366F1] font-bold">Finanzas & Gastos en Pareja</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#ECFDF5] text-[#10B981] border border-[#A7F3D0]">
+            ● Beta Lista
+          </span>
+        </div>
+
+        <p class="text-sm text-[#475569] mb-6 leading-relaxed">
+          Sincronización en tiempo real vía WebSockets para parejas que conviven. Cero hojas de cálculo, división equitativa o proporcional según ingresos, metas de ahorro y saldado de deudas con confeti.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-[#F1F5F9]">
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Flutter</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">NestJS</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Socket.io</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">PostgreSQL</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">VaultS3</span>
+        </div>
+      </div>
+
+      <!-- Card 2: QuoteCraft -->
+      <div class="glass-card rounded-3xl p-8 border border-[#F1F5F9] hover:border-[#F59E0B]/50 transition-all relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-[#F59E0B]/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+        
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-[#FFFBEB] text-[#D97706] flex items-center justify-center font-bold text-xl shadow-sm border border-[#FDE68A]">
+              🛠️
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-[#0F172A] font-['Plus_Jakarta_Sans']">QuoteCraft</h3>
+              <p class="text-xs text-[#D97706] font-bold">Presupuestos Rápidos para Técnicos</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#FEF3C7] text-[#D97706] border border-[#FDE68A]">
+            En Desarrollo
+          </span>
+        </div>
+
+        <p class="text-sm text-[#475569] mb-6 leading-relaxed">
+          Herramienta móvil Micro-B2B para electricistas, fontaneros y contratistas. Genera presupuestos formales en PDF, captura la firma del cliente en pantalla y los envía por WhatsApp en 2 minutos frente al cliente.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-[#F1F5F9]">
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Flutter</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Firma Digital</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">PDFKit Engine</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">WhatsApp API</span>
+        </div>
+      </div>
+
+      <!-- Card 3: FocusFlow -->
+      <div class="glass-card rounded-3xl p-8 border border-[#F1F5F9] hover:border-[#4F46E5]/50 transition-all relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-[#4F46E5]/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+        
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-[#EEF2FF] text-[#4F46E5] flex items-center justify-center font-bold text-xl shadow-sm border border-[#C7D2FE]">
+              🧠
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-[#0F172A] font-['Plus_Jakarta_Sans']">FocusFlow</h3>
+              <p class="text-xs text-[#4F46E5] font-bold">Productividad Visual & TDAH</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#EEF2FF] text-[#4F46E5] border border-[#C7D2FE]">
+            En Desarrollo
+          </span>
+        </div>
+
+        <p class="text-sm text-[#475569] mb-6 leading-relaxed">
+          Combate la parálisis por análisis y la procrastinación. Escribe una tarea compleja y la inteligencia artificial la descompone en 4 micro-pasos de 5 minutos, con temporizadores circulares y respuestas hápticas.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-[#F1F5F9]">
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Flutter</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">IA Decomposer</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Pomodoro Visual</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">OLED Dark Mode</span>
+        </div>
+      </div>
+
+      <!-- Card 4: SnapBite -->
+      <div class="glass-card rounded-3xl p-8 border border-[#F1F5F9] hover:border-[#10B981]/50 transition-all relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-[#10B981]/10 rounded-bl-full -z-10 group-hover:scale-110 transition-transform"></div>
+        
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-[#ECFDF5] text-[#059669] flex items-center justify-center font-bold text-xl shadow-sm border border-[#A7F3D0]">
+              🥑
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-[#0F172A] font-['Plus_Jakarta_Sans']">SnapBite</h3>
+              <p class="text-xs text-[#059669] font-bold">AI Calorie Tracker (Foto & Voz)</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#ECFDF5] text-[#059669] border border-[#A7F3D0]">
+            En Desarrollo
+          </span>
+        </div>
+
+        <p class="text-sm text-[#475569] mb-6 leading-relaxed">
+          Contar calorías en 5 segundos. Toma una foto a tu plato de comida o envía una nota de voz. Nuestro backend analiza macronutrientes con visión artificial y caché ultra-rápido en PostgreSQL.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-[#F1F5F9]">
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Flutter</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Multimodal Vision</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Voice Whisper</span>
+          <span class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-[#F8FAFC] text-[#64748B]">Postgres Cache</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

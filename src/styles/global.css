@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --primary-light: #eef2ff;
+    --secondary: #f43f5e;
+    --secondary-light: #ffe4e6;
+    --positive: #10b981;
+    --positive-light: #ecfdf5;
+    --negative: #f97316;
+    --negative-light: #fff7ed;
+    --surface: #ffffff;
+    --background: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --card-border: #f1f5f9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism & Modern Soft Shadows */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1.2px solid #f1f5f9;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+}
+
+.glass-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -4px rgba(99, 102, 241, 0.1), 0 6px 12px -2px rgba(15, 23, 42, 0.04);
+  border-color: #e0e7ff;
+}
+
+/* Subtle Gradient Grids */
+.bg-mesh-pattern {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(244, 63, 94, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.06) 0px, transparent 50%);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

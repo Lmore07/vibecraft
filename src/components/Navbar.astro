@@ -1,0 +1,103 @@
+---
+// Navbar.astro
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-[#F1F5F9]/80 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      
+      <!-- Logo Brand -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-white p-1 border border-[#F1F5F9] shadow-md shadow-[#7C3AED]/15 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+          <img src="/icons/vibecraft_icon.png" alt="VibeCraft Icon" class="w-full h-full object-contain" />
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-extrabold tracking-tight text-[#0F172A] font-['Plus_Jakarta_Sans']">Vibe<span class="text-[#6366F1]">Craft</span></span>
+            <span class="px-2 py-0.5 text-[10px] font-bold tracking-wide uppercase bg-[#EEF2FF] text-[#4F46E5] rounded-full border border-[#E0E7FF]">Studio</span>
+          </div>
+          <p class="text-[11px] text-[#64748B] font-medium hidden sm:block">Software Lab & Digital Products</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#duoledger" class="text-sm font-semibold text-[#475569] hover:text-[#6366F1] transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
+          DuoLedger
+        </a>
+        <a href="#suite" class="text-sm font-semibold text-[#475569] hover:text-[#6366F1] transition-colors">
+          Productos
+        </a>
+        <a href="#stack" class="text-sm font-semibold text-[#475569] hover:text-[#6366F1] transition-colors">
+          Arquitectura
+        </a>
+        <a href="#calculator" class="text-sm font-semibold text-[#475569] hover:text-[#6366F1] transition-colors">
+          Demo Interactivo
+        </a>
+        <a href="#services" class="text-sm font-semibold text-[#475569] hover:text-[#6366F1] transition-colors">
+          Servicios
+        </a>
+      </nav>
+
+      <!-- CTA Action Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a
+          href="https://wa.me/?text=Hola%20equipo%20de%20VibeCraft,%20quiero%20cotizar%20un%20proyecto%20o%20conocer%20m%C3%A1s%20sobre%20sus%20apps."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative group px-5 py-2.5 rounded-2xl bg-gradient-to-r from-[#6366F1] via-[#4F46E5] to-[#F43F5E] text-white font-semibold text-sm shadow-md shadow-[#6366F1]/25 hover:shadow-lg hover:shadow-[#6366F1]/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2"
+        >
+          <span>Hablemos</span>
+          <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2.5 rounded-xl text-[#475569] hover:bg-[#F1F5F9] transition-colors"
+        aria-label="Abrir menú"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-b border-[#F1F5F9] bg-white/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
+    <a href="#duoledger" class="block py-2 text-base font-semibold text-[#0F172A] hover:text-[#6366F1]">DuoLedger (App de Parejas)</a>
+    <a href="#suite" class="block py-2 text-base font-semibold text-[#0F172A] hover:text-[#6366F1]">Suite de Aplicaciones</a>
+    <a href="#stack" class="block py-2 text-base font-semibold text-[#0F172A] hover:text-[#6366F1]">Stack Tecnológico</a>
+    <a href="#calculator" class="block py-2 text-base font-semibold text-[#0F172A] hover:text-[#6366F1]">Simulador Interactivo</a>
+    <a href="#services" class="block py-2 text-base font-semibold text-[#0F172A] hover:text-[#6366F1]">Servicios para Clientes</a>
+    <div class="pt-3">
+      <a
+        href="https://wa.me/?text=Hola%20equipo%20de%20VibeCraft,%20quiero%20cotizar%20un%20proyecto."
+        target="_blank"
+        class="w-full py-3 rounded-xl bg-[#6366F1] text-white font-semibold text-center block shadow-md shadow-[#6366F1]/20"
+      >
+        Cotizar por WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    // Cerrar al clickear links
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  }
+</script>

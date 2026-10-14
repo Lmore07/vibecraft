@@ -1,0 +1,11 @@
+services:
+  vibecraft_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vibecraft_landing
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
