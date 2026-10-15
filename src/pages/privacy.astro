@@ -1,0 +1,240 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = "14 de Octubre de 2026";
+---
+
+<Layout
+  title="Política de Privacidad — VibeCraft Apps"
+  description="Política de privacidad oficial de VibeCraft Apps y sus productos móviles, incluyendo DuoLedger. Transparencia sobre el tratamiento, seguridad y derechos de datos del usuario."
+>
+  <Navbar />
+
+  <main class="pt-32 pb-24 bg-[#F8FAFC]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#F1F5F9] shadow-sm mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EEF2FF] text-[#4F46E5] text-xs font-bold uppercase tracking-wider mb-4">
+          <span>🛡️ Documento Legal Oficial</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-[#0F172A] tracking-tight font-['Plus_Jakarta_Sans'] mb-4">
+          Política de Privacidad
+        </h1>
+        <p class="text-sm text-[#64748B] flex items-center gap-2">
+          <span>Última actualización: <strong>{lastUpdated}</strong></span>
+          <span>•</span>
+          <span>VibeCraft Apps & DuoLedger</span>
+        </p>
+      </div>
+
+      <!-- Content Body -->
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#F1F5F9] shadow-sm space-y-10 text-[#334155] leading-relaxed">
+        
+        <!-- Intro -->
+        <section class="space-y-3">
+          <p class="text-base sm:text-lg text-[#0F172A] font-medium leading-relaxed">
+            En <strong>VibeCraft Apps</strong> (en adelante, "nosotros", "nuestro" o "la Compañía"), la privacidad y seguridad de los datos de nuestros usuarios es nuestra máxima prioridad. Esta Política de Privacidad describe de manera transparente qué datos recopilamos, cómo los utilizamos, almacenamos y protegemos al utilizar nuestras aplicaciones móviles (incluyendo <strong>DuoLedger</strong>, QuoteCraft, FocusFlow y SnapBite) y nuestros servicios web asociados.
+          </p>
+          <p class="text-sm text-[#64748B]">
+            Al descargar, registrarte o utilizar cualquiera de nuestras aplicaciones o servicios, aceptas los términos descritos en la presente política.
+          </p>
+        </section>
+
+        <!-- 1. Responsable -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">1.</span> Responsable del Tratamiento de Datos
+          </h2>
+          <p class="text-sm">
+            El responsable del tratamiento de tus datos personales es:
+          </p>
+          <div class="p-4 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] text-sm space-y-1">
+            <p><strong>Entidad:</strong> VibeCraft Apps Studio</p>
+            <p><strong>Sitio Web Oficial:</strong> <a href="https://vibecraft.app" class="text-[#6366F1] font-semibold hover:underline">https://vibecraft.app</a></p>
+            <p><strong>Correo de Contacto y Privacidad:</strong> <a href="mailto:privacy@vibecraft.app" class="text-[#6366F1] font-semibold hover:underline">privacy@vibecraft.app</a></p>
+          </div>
+        </section>
+
+        <!-- 2. Información que recopilamos -->
+        <section class="space-y-4 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">2.</span> Información que Recopilamos
+          </h2>
+          <p class="text-sm">
+            Recopilamos únicamente la información estrictamente necesaria para el correcto funcionamiento de las características de la aplicación:
+          </p>
+          
+          <div class="space-y-4">
+            <div class="p-5 rounded-2xl bg-[#F8FAFC] border border-[#F1F5F9]">
+              <h3 class="text-base font-bold text-[#0F172A] mb-1">A. Información de Registro y Cuenta</h3>
+              <p class="text-sm text-[#64748B]">
+                Cuando creas una cuenta en nuestras apps, podemos recopilar tu nombre completo, dirección de correo electrónico, contraseña cifrada mediante hash (bcrypt) y avatar o foto de perfil opcional. Si inicias sesión a través de Google o Apple, recibimos los identificadores básicos autorizados por dichos proveedores.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#F8FAFC] border border-[#F1F5F9]">
+              <h3 class="text-base font-bold text-[#0F172A] mb-1">B. Datos de Uso y Contenido de la Aplicación (ej. DuoLedger)</h3>
+              <p class="text-sm text-[#64748B]">
+                Para proporcionar la funcionalidad de finanzas compartidas y registro de gastos, almacenamos: montos de transacciones, descripciones, categorías (ej. comida, hogar, salidas), fechas de pago, método de división (50/50, proporcional) y vínculos de espacios compartidos con tu pareja o miembros del grupo.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#F8FAFC] border border-[#F1F5F9]">
+              <h3 class="text-base font-bold text-[#0F172A] mb-1">C. Archivos Multimedia y Comprobantes</h3>
+              <p class="text-sm text-[#64748B]">
+                Si decides adjuntar fotos de recibos, facturas o comprobantes de transferencia a un gasto, las imágenes se transmiten de manera encriptada y se almacenan en nuestros servidores seguros de objetos (VaultS3). El acceso a la cámara o galería se solicita de forma explícita mediante los permisos del sistema operativo.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#F8FAFC] border border-[#F1F5F9]">
+              <h3 class="text-base font-bold text-[#0F172A] mb-1">D. Información Técnica y de Diagnóstico</h3>
+              <p class="text-sm text-[#64748B]">
+                Podemos recopilar datos técnicos anónimos como modelo del dispositivo, versión del sistema operativo (Android/iOS), identificadores de instalación de la app y registros de errores (crash logs) con el único fin de solucionar problemas técnicos y garantizar la estabilidad del servicio.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Cómo usamos la información -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">3.</span> Finalidad del Tratamiento de los Datos
+          </h2>
+          <p class="text-sm">
+            Utilizamos tu información exclusivamente para los siguientes propósitos:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-sm text-[#475569] pl-2">
+            <li><strong>Sincronización en tiempo real:</strong> Calcular balances entre parejas y miembros mediante WebSockets instantáneos.</li>
+            <li><strong>Gestión de tu cuenta:</strong> Autenticarte de forma segura, permitir la recuperación de contraseñas y gestionar suscripciones activas.</li>
+            <li><strong>Notificaciones esenciales:</strong> Enviarte avisos sobre nuevos gastos registrados por tu pareja o recordatorios de cuentas saldadas.</li>
+            <li><strong>Seguridad del sistema:</strong> Detectar y prevenir fraudes, accesos no autorizados o abusos en la plataforma.</li>
+            <li><strong>Soporte al cliente:</strong> Responder a tus dudas, sugerencias o solicitudes de asistencia técnica.</li>
+          </ul>
+          <div class="p-4 rounded-2xl bg-[#ECFDF5] border border-[#A7F3D0] text-sm text-[#065F46] font-medium">
+            ✅ <strong>Compromiso de VibeCraft:</strong> Nunca venderemos, alquilaremos ni comercializaremos tus datos personales o financieros a terceros ni a redes publicitarias para fines de rastreo o marketing invasivo.
+          </div>
+        </section>
+
+        <!-- 4. Almacenamiento y Seguridad -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">4.</span> Almacenamiento, Cifrado y Seguridad
+          </h2>
+          <p class="text-sm">
+            Aplicamos estándares rigurosos de seguridad técnica y organizativa para salvaguardar tu información:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-sm text-[#475569] pl-2">
+            <li><strong>Cifrado en tránsito:</strong> Todas las comunicaciones entre tu dispositivo móvil y nuestros servidores viajan protegidas con cifrado TLS/HTTPS moderno y protocolos seguros WebSocket (WSS).</li>
+            <li><strong>Cifrado en reposo:</strong> Las bases de datos relacionales (PostgreSQL) y el almacenamiento de comprobantes (VaultS3) están encriptados con AES-256.</li>
+            <li><strong>Contraseñas seguras:</strong> Nunca almacenamos contraseñas en texto plano; utilizamos algoritmos de hash unidireccionales robustos con salt (bcrypt).</li>
+          </ul>
+        </section>
+
+        <!-- 5. Eliminación de Datos y Cuenta (Estricto Google Play) -->
+        <section class="space-y-4 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">5.</span> Retención y Eliminación de Datos (Derecho al Olvido)
+          </h2>
+          <p class="text-sm">
+            Cumpliendo estrictamente con las políticas de Google Play y el RGPD, tienes el derecho de solicitar la eliminación total e irreversible de tu cuenta y todos tus datos asociados en cualquier momento.
+          </p>
+          
+          <div class="p-6 rounded-2xl bg-[#FFF7ED] border border-[#FED7AA] space-y-3">
+            <h3 class="text-base font-bold text-[#9A3412]">¿Cómo solicitar la eliminación de tu cuenta?</h3>
+            <ol class="list-decimal list-inside space-y-2 text-sm text-[#C2410C]">
+              <li><strong>Desde la aplicación:</strong> Ve a tu <em>Perfil</em> ➔ <em>Configuración de Cuenta</em> ➔ Selecciona <em>"Eliminar mi cuenta definitivamente"</em>.</li>
+              <li><strong>Por correo electrónico:</strong> Envía un mensaje desde el correo registrado a <a href="mailto:privacy@vibecraft.app" class="underline font-bold">privacy@vibecraft.app</a> con el asunto <em>"Solicitud de eliminación de cuenta"</em>.</li>
+            </ol>
+            <p class="text-xs text-[#9A3412] mt-2">
+              Una vez confirmada la solicitud, todos tus datos personales, gastos registrados, fotos de recibos e historiales serán eliminados de manera permanente de nuestras bases de datos activas en un plazo máximo de <strong>30 días</strong>.
+            </p>
+          </div>
+        </section>
+
+        <!-- 6. Compartición con Terceros -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">6.</span> Proveedores de Servicios y Terceros
+          </h2>
+          <p class="text-sm">
+            Para prestar el servicio, podemos recurrir a proveedores de infraestructura de confianza bajo estrictos acuerdos de confidencialidad y tratamiento de datos:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-[#475569] pl-2">
+            <li><strong>Servidores y Hosting:</strong> Proveedores de nube segura para la ejecución de nuestra API (PostgreSQL, NestJS).</li>
+            <li><strong>Almacenamiento de Objetos:</strong> Infraestructura privada de almacenamiento en la nube compatible con S3 para respaldos y recibos.</li>
+            <li><strong>Pasarelas de Pago:</strong> Las suscripciones son procesadas de forma segura directamente por <strong>Google Play Billing</strong> o <strong>Apple App Store In-App Purchases</strong>. VibeCraft Apps nunca tiene acceso ni almacena los números completos de tus tarjetas de crédito o datos bancarios.</li>
+          </ul>
+        </section>
+
+        <!-- 7. Privacidad de Menores -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">7.</span> Privacidad de Menores de Edad
+          </h2>
+          <p class="text-sm">
+            Nuestros servicios no están dirigidos a personas menores de 13 años (o 16 años según la legislación local). No recopilamos conscientemente información personal de niños. Si detectamos que un menor nos ha proporcionado datos sin el consentimiento de sus tutores legales, procederemos a eliminarlos de inmediato.
+          </p>
+        </section>
+
+        <!-- 8. Tus Derechos -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">8.</span> Tus Derechos de Protección de Datos
+          </h2>
+          <p class="text-sm">
+            Dependiendo de tu ubicación geográfica (incluyendo la Unión Europea bajo el RGPD o América Latina bajo normativas locales de protección de datos personales), tienes los siguientes derechos:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-[#475569] pl-2">
+            <li><strong>Derecho de Acceso:</strong> Solicitar una copia de los datos que conservamos sobre ti.</li>
+            <li><strong>Derecho de Rectificación:</strong> Modificar cualquier información inexacta o desactualizada.</li>
+            <li><strong>Derecho de Supresión:</strong> Exigir la eliminación completa de tus registros.</li>
+            <li><strong>Derecho a la Portabilidad:</strong> Recibir tus datos en un formato legible y estructurado.</li>
+          </ul>
+        </section>
+
+        <!-- 9. Cambios a la Política -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">9.</span> Modificaciones a esta Política
+          </h2>
+          <p class="text-sm">
+            Nos reservamos el derecho de actualizar esta Política de Privacidad periódicamente para reflejar mejoras operativas, legales o de seguridad. Cuando realicemos cambios significativos, te lo notificaremos a través de la aplicación o mediante aviso visible en nuestro sitio web.
+          </p>
+        </section>
+
+        <!-- 10. Contacto -->
+        <section class="space-y-3 border-t border-[#F1F5F9] pt-8">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#0F172A] font-['Plus_Jakarta_Sans'] flex items-center gap-2.5">
+            <span class="text-[#6366F1]">10.</span> Canal de Contacto
+          </h2>
+          <p class="text-sm">
+            Si tienes dudas, inquietudes o deseas ejercer cualquiera de tus derechos de privacidad, no dudes en escribirnos:
+          </p>
+          <div class="p-5 rounded-2xl bg-[#EEF2FF] border border-[#C7D2FE] text-sm text-[#3730A3] space-y-1">
+            <p><strong>VibeCraft Apps Studio — Equipo de Privacidad & Cumplimiento</strong></p>
+            <p>Correo electrónico: <a href="mailto:privacy@vibecraft.app" class="font-bold underline">privacy@vibecraft.app</a></p>
+            <p>Soporte general: <a href="mailto:support@vibecraft.app" class="font-bold underline">support@vibecraft.app</a></p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Back to Home Button -->
+      <div class="mt-8 text-center">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white text-[#4F46E5] font-bold text-sm border border-[#E2E8F0] shadow-sm hover:bg-[#F8FAFC] transition-all"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Volver al Inicio</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
